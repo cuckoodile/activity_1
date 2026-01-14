@@ -1,6 +1,8 @@
 Microsoft Windows [Version 10.0.19045.6456]
 (c) Microsoft Corporation. All rights reserved.
 
+		>> PROJECT-GIT INITIALIZATION <<
+
 C:\Users\Admin\Documents\ian\Java\sample_push>git init
 Initialized empty Git repository in C:/Users/Admin/Documents/ian/Java/sample_push/.git/
 
@@ -8,6 +10,8 @@ C:\Users\Admin\Documents\ian\Java\sample_push>git add .
 
 C:\Users\Admin\Documents\ian\Java\sample_push>git commit -m "Initial state"
 Author identity unknown
+
+		>> LOGIN GIT ACCOUNT BEFORE PUSHING <<
 
 *** Please tell me who you are.
 
@@ -30,6 +34,8 @@ C:\Users\Admin\Documents\ian\Java\sample_push>git commit -m "Initial state"
  1 file changed, 26 insertions(+)
  create mode 100644 git_commands.txt
 
+		>> PUSH PROJECT <<
+
 C:\Users\Admin\Documents\ian\Java\sample_push>git branch -M main
 
 C:\Users\Admin\Documents\ian\Java\sample_push>git remote add origin https://github.com/cuckoodile/activity_1.git
@@ -45,3 +51,35 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/cuckoodile/activity_1.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
+
+		>> CHECK STATUS <<
+C:\Users\Admin\Documents\ian\Java\sample_push>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        push_record.txt
+
+		>> PUSH AGAIN TO UPDATE CHANGES <<
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git add .
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git commit -m "Added history"
+[main 39bde77] Added history
+ 1 file changed, 47 insertions(+)
+ create mode 100644 push_record.txt
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.02 KiB | 1.02 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/cuckoodile/activity_1.git
+   f8f6197..39bde77  main -> main
+
+C:\Users\Admin\Documents\ian\Java\sample_push>
