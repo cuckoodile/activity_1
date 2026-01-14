@@ -1,0 +1,47 @@
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git init
+Initialized empty Git repository in C:/Users/Admin/Documents/ian/Java/sample_push/.git/
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git add .
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git commit -m "Initial state"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@335-TPC.(none)')
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git config --global user.email "lhourdeiansube7@gmail.com"
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git config --global user.name cuckoodile
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git commit -m "Initial state"
+[master (root-commit) f8f6197] Initial state
+ 1 file changed, 26 insertions(+)
+ create mode 100644 git_commands.txt
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git branch -M main
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git remote add origin https://github.com/cuckoodile/activity_1.git
+
+C:\Users\Admin\Documents\ian\Java\sample_push>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 556 bytes | 556.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/cuckoodile/activity_1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
