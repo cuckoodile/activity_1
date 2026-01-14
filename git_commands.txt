@@ -1,0 +1,26 @@
+git init
+	- Initialize project git
+	- ALWAYS start with this
+
+git clone {repository URL}
+	- git clone https://github.com/cuckoodile/Java-SHS-2025-2026.git
+	- Project must be fresh (empty)
+
+git pull
+	- Pull the repository content
+
+git remote -v
+	- Check folder remote repository
+
+git branch
+	- Check current branch
+
+git add {file/folder to add}
+	- Add the folders or files you want to add to commit
+
+git commit -m "{Your message}"
+	- Stage your added changes
+	- This command is use to set all the changes you want to push or stash
+
+git push
+	- Send your changes to your selected repository branch
